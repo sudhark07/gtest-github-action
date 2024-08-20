@@ -18,8 +18,10 @@ enable_testing()
 add_compile_options("--coverage")
 add_executable(
   cleancode
-  PrintColorCode.cpp
-  PrintColorCode.Tests.cpp
+  StringCalculator.cpp
+  StringCalculator.Tests.cpp
+  #PrintColorCode.cpp
+  #PrintColorCode.Tests.cpp
 )
 target_link_libraries(
   cleancode
