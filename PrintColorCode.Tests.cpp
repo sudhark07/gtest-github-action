@@ -8,3 +8,4 @@ TEST(PrintColorCodeTestSuite, AssertColorCodeManualItemsCount) {
         int actualCount = printColorMap();
     // Assert
         ASSERT_EQ(expectedCount, actualCount);
+}
