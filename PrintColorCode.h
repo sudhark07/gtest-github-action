@@ -1,1 +1,1 @@
-
+int printColorMap();
