@@ -20,7 +20,8 @@ add_executable(
   cleancode
   StringCalculator.cpp
   #StringCalculator.Tests.cpp
-  StringCalculatorFixture.Tests.cpp
+  #StringCalculatorFixture.Tests.cpp
+  DataDrivenTests.cpp
   #PrintColorCode.cpp
   #PrintColorCode.Tests.cpp
 )
