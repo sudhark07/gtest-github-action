@@ -14,7 +14,7 @@ TEST(test_challenge_test_alert, check_alertCount_1) {
     // act
     alertInCelcius(input);
     // assert
-    ASSERT_GE( alertFailureCount, expectedOutput);
+    ASSERT_EQ( alertFailureCount, expectedOutput);
 }
 
 TEST(test_challenge_test_alert, check_alertCount_2) {
@@ -26,7 +26,7 @@ TEST(test_challenge_test_alert, check_alertCount_2) {
     alertInCelcius(input);
     alertInCelcius(input);
     // assert
-    ASSERT_GE( alertFailureCount, expectedOutput);
+    ASSERT_EQ( alertFailureCount, expectedOutput);
 }
 
 
