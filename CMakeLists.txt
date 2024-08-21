@@ -18,12 +18,14 @@ enable_testing()
 add_compile_options("--coverage")
 add_executable(
   cleancode
-  StringCalculator.cpp
+  #StringCalculator.cpp
   #StringCalculator.Tests.cpp
   #StringCalculatorFixture.Tests.cpp
-  DataDrivenTests.cpp
+  #DataDrivenTests.cpp
   #PrintColorCode.cpp
   #PrintColorCode.Tests.cpp
+  TestChallenge.cpp
+  TestChallengeTests.cpp
 )
 target_link_libraries(
   cleancode
