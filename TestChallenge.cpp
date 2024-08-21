@@ -7,7 +7,7 @@ int networkAlerter(float celcius) {
    //Real Network Interaction Happens Here
     // Return 200 for ok
     // Return 500 for not-ok
-  if(celcius % 2==0){
+  if(((static_cast<int>celcius) % 2==0){
     return 200;
   }
   return 500;
