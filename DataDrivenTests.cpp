@@ -18,7 +18,7 @@ INSTANTIATE_TEST_SUITE_P(SingleorMultipleNumerParameter,
                                         std::make_tuple("", 0),
                                         std::make_tuple("0", 0),
                                         std::make_tuple("1", 1),
-                                        std::make_tuple("1,2",3)
+                                        std::make_tuple("1,2",3),
                                         std::make_tuple("1,2,3", 6),
                                         std::make_tuple("1\n2,3", 6),
                                         std::make_tuple("//;\n1;2", 3),
