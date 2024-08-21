@@ -6,12 +6,16 @@ class string_calculator_add_Fixture:public testing::Test{
 
 };
 class string_calculator_add_Parameter_Fixture:
+                                 public string_calculator_add_Fixture,
+                                 public testing::WithParamInterface<std::tuple<std::string,int>>{
+};
+/*class string_calculator_add_Parameter_Fixture:
                                  public testing::Test,
                                  public testing::WithParamInterface<std::tuple<std::string,int>>{
   protected:
   StringCalculator calculator;
 
-};
+};*/
 INSTANTIATE_TEST_SUITE_P(SingleorMultipleNumerParameter,
                          string_calculator_add_Parameter_Fixture,
                          testing::Values(
