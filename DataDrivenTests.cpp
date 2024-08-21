@@ -39,6 +39,12 @@ TEST(string_calculator_add_when_passed_a_single_number,returns_0_for_empty_strin
   ASSERT_EQ(actualSum,expectedsum);
 }
 
+TEST_F(string_calculator_add_Fixture, when_passed_negative_numbers_throws_an_exception_listing_invalid_values) {
+    // Arrange
+    string input = "-5, -4";
+    // Act & Assert
+    ASSERT_THROW( calculator.Add(input), std::invalid_argument);
+}
 TEST_F(string_calculator_add_Fixture,when_passed_a_single_number_returns_0_for_zero){
  //Arrange
   string input="0";
