@@ -6,7 +6,7 @@ class string_calculator_add_Fixture:public testing::Test{
 
 };
 class string_calculator_add_Parameter_Fixture:
-                                 testing::Test
+                                 public testing::Test
                                  public testing::WithParamInterface<std::tuple<std::string,int>>{
   protected:
   StringCalculator calculator;
