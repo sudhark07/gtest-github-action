@@ -49,15 +49,6 @@ TEST_F(string_calculator_add_Fixture, when_passed_negative_numbers_throws_an_exc
     // Act & Assert
     ASSERT_THROW( calculator.Add(input), std::invalid_argument);
 }
-TEST_F(string_calculator_add_Fixture,when_passed_a_single_number_returns_0_for_zero){
- //Arrange
-  string input="0";
-  int expectedsum=0;
-  //Act
-  int actualSum=calculator.Add(input);
-  //Assert
-  ASSERT_EQ(actualSum,expectedsum);
-}
 
 TEST_P(string_calculator_add_Parameter_Fixture,when_passed_a_single_Or_Multiple_Number_with_Delimiters_returns_Sum){
  //Arrange
